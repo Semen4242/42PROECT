@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <th> ID</th>
+                <th> логин</th>
+                <th> имя</th>
+                <th> фамилия</th>
+                <th> возраст</th>
+                <th> баланс</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td> {{user.id}}</td>
+                <td> {{user.login}}</td>
+                <td> {{user.fist_name}}</td>
+                <td> {{user.last_name}}</td>
+                <td> {{user.age}}</td>
+                <td> {{user.balanse}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+</body>
+</html>
